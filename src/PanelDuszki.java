@@ -97,15 +97,15 @@ public class PanelDuszki extends JPanel implements Runnable, KeyListener {
         o = lewo;
         w = prawo;
         while (o < prawo || w > lewo) {
-            if (t == 30 && y == z) {
+            if (t >= 25 && t<=35 && y == z) {
                 y = -80;
-            } else if (t == 110 && p == z) {
+            } else if (t >= 105 && t <= 115 && p == z) {
                 p = -30;
-            } else if (t == 270 && r == z) {
+            } else if (t >= 265 && t <= 275&& r == z) {
                 r = -10;
-            } else if (t == 190 && i == z) {
+            } else if (t >= 185 && t <= 195 && i == z) {
                 i = -130;
-            } else if (t == 350 && u == z) {
+            } else if (t >= 345 && t <= 355 && u == z) {
                 u = -10;
             }
             repaint();
